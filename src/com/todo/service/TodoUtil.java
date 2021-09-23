@@ -24,7 +24,7 @@ public class TodoUtil {
 		
 		title = sc.next();
 		if (list.isDuplicate(title)) {
-			System.out.printf("중복된 제목 !!");
+			System.out.println("중복된 제목 !!");
 			return;
 		}
 		sc.nextLine();  //제목 뒤에 들어오는 enter 제거 
