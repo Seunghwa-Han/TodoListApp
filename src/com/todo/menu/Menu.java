@@ -4,14 +4,19 @@ public class Menu {
     public static void displaymenu()
     {
         System.out.println();
-        System.out.println("1. Add a new item ( add )");
-        System.out.println("2. Delete an existing item ( del )");
-        System.out.println("3. Update an item  ( edit )");
-        System.out.println("4. List all items ( ls )");
-        System.out.println("5. sort the list by name ( ls_name_asc )");
-        System.out.println("6. sort the list by name ( ls_name_desc )");
-        System.out.println("7. sort the list by date ( ls_date )");
-        System.out.println("8. exit (Or press escape key to exit)");
-        System.out.println("Enter your choice >");
+        System.out.println("< TodoList 명령어 사용법 >");
+        System.out.println("1. 항목 추가 ( add )");
+        System.out.println("2. 항목 삭제 ( del )");
+        System.out.println("3. 항목 수정  ( edit )");
+        System.out.println("4. 전체 목록 ( ls )");
+        System.out.println("5. 이름순으로 정렬 ( ls_name_asc )");
+        System.out.println("6. 이름 역순으로 정렬 ( ls_name_desc )");
+        System.out.println("7. 날짜 순으로 정렬 ( ls_date )");
+        System.out.println("8. 종료 (exit or press escape key to exit)");
+    }
+    
+    public static void prompt()
+    {
+    	System.out.println("\nCommand > ");
     }
 }

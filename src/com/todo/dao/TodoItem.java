@@ -3,10 +3,9 @@ package com.todo.dao;
 import java.util.Date;
 
 public class TodoItem {
-    private String title;
-    private String desc;
-    private Date current_date;
-
+    private String title;  //제목
+    private String desc;   //내용
+    private Date current_date;  //입력한 시간 
 
     public TodoItem(String title, String desc){
         this.title=title;
@@ -37,4 +36,10 @@ public class TodoItem {
     public void setCurrent_date(Date current_date) {
         this.current_date = current_date;
     }
+
+	@Override
+	public String toString() {
+		return "[" + title + "]" + desc + "-" + current_date;
+	}
+    
 }

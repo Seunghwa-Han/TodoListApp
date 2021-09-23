@@ -30,7 +30,7 @@ public class TodoList {
 		return new ArrayList<TodoItem>(list);
 	}
 
-	public void sortByName() {
+	public void sortByName() { //이름 순으로 정렬 
 		Collections.sort(list, new TodoSortByName());
 
 	}
@@ -43,11 +43,11 @@ public class TodoList {
 		}
 	}
 	
-	public void reverseList() {
+	public void reverseList() { //이름 역순으로 정렬 
 		Collections.reverse(list);
 	}
 
-	public void sortByDate() {
+	public void sortByDate() { //날짜 순으로 정렬 
 		Collections.sort(list, new TodoSortByDate());
 	}
 
