@@ -46,13 +46,17 @@ public class TodoUtil {
 		
 		String title = sc.next();
 		
+		boolean check = false;
 		for (TodoItem item : l.getList()) {
 			if (title.equals(item.getTitle())) {
 				l.deleteItem(item);
 				System.out.println("아이템 삭제 완료!");
+				check = true;
 				break;
 			}
 		}
+		if(!check)
+			System.out.println("존재하지 않는 제목 !!");
 	}
 
 
@@ -84,7 +88,7 @@ public class TodoUtil {
 				l.deleteItem(item);
 				TodoItem t = new TodoItem(new_title, new_description);  //새로운 객체 생성해서 add
 				l.addItem(t); //수정된 내용은 current_date가 현재 시간으로 setting됨 
-				System.out.println("item updated");
+				System.out.println("아이템 수정 완료 !!");
 			}
 		}
 
