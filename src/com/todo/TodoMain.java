@@ -38,6 +38,10 @@ public class TodoMain {
 			case "ls":
 				TodoUtil.listAll(l);
 				break;
+				
+			case "ls_cate":
+				TodoUtil.listCate(l);
+				break;
 
 			case "ls_name_asc":
 				l.sortByName();

@@ -226,4 +226,20 @@ public class TodoUtil {
 			System.out.println("해당 키워드를 포함하는 항목이 없습니다.");
 		else System.out.println("총 "+ count+ "개의 항목을 찾았습니다.");
 	}
+	
+	public static void listCate(TodoList l) {
+		HashSet<String> set = new HashSet<String>();
+		for(TodoItem t : l.getList()) {
+			set.add(t.getCategory());
+		}
+		if(set.size()!=0) {
+			Iterator iter = set.iterator();
+			while(iter.hasNext()) {
+				System.out.print(iter.next());
+				if(iter.hasNext())
+					System.out.print(" / ");
+			}
+			System.out.println();
+		}
+	}
 }
