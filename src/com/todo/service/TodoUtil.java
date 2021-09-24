@@ -200,4 +200,17 @@ public class TodoUtil {
 			e.printStackTrace();
 		}
 	}
+	
+	public static void findKeyword(TodoList l, String find) {
+		int count =0; 
+		for(TodoItem t : l.getList()) {
+			if(t.toString().contains(find)) {
+				count++;
+				System.out.println((l.getList().indexOf(t)+1)+". "+t.toString());
+			}
+		}
+		if(count==0)
+			System.out.println("해당 키워드를 포함하는 항목이 없습니다.");
+		else System.out.println("총 "+ count+ "개의 항목을 찾았습니다.");
+	}
 }

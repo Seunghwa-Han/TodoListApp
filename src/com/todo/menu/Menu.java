@@ -12,11 +12,12 @@ public class Menu {
         System.out.println("5. 이름순으로 정렬 ( ls_name_asc )");
         System.out.println("6. 이름 역순으로 정렬 ( ls_name_desc )");
         System.out.println("7. 날짜 순으로 정렬 ( ls_date )");
-        System.out.println("8. 종료 ( exit )");
+        System.out.println("8. 검색 ( find <키워드> )");
+        System.out.println("9. 종료 ( exit )");
     }
     
     public static void prompt()
     {
-    	System.out.println("\nCommand > ");
+    	System.out.print("\nCommand > ");
     }
 }

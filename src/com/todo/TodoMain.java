@@ -58,6 +58,11 @@ public class TodoMain {
 				isList = true;
 				break;
 				
+			case "find":
+				String find = sc.next();
+				TodoUtil.findKeyword(l, find);
+				break;
+				
 			case "help":
 				Menu.displaymenu();
 				break;
