@@ -59,7 +59,7 @@ public class TodoUtil {
 				l.deleteItem(item);
 				System.out.println("아이템 삭제 완료!");
 			}else {
-				System.out.println();
+				System.out.println("아이템 삭제 취소!");
 				return;
 			}
 		}
