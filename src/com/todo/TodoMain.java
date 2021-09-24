@@ -58,6 +58,13 @@ public class TodoMain {
 				isList = true;
 				break;
 				
+			case "ls_date_desc":
+				l.sortByDate();
+				l.reverseList();
+				System.out.println("최신순으로 정렬!");
+				isList = true;
+				break;
+				
 			case "find":
 				String find = sc.next();
 				TodoUtil.findKeyword(l, find);
