@@ -37,9 +37,10 @@ public class TodoList {
 
 	public void listAll() {
 		System.out.println("\n"
-				+ "========== [전체 목록]");
+				+ "========== [전체 목록, 총 "+ list.size() +"개]");
+		int i =0 ;
 		for (TodoItem myitem : list) {
-			System.out.println(myitem.toString());
+			System.out.println((i+1)+". "+myitem.toString());
 		}
 	}
 	
