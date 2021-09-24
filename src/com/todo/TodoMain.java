@@ -63,6 +63,11 @@ public class TodoMain {
 				TodoUtil.findKeyword(l, find);
 				break;
 				
+			case "find_cate":
+				String find_cate = sc.next();
+				TodoUtil.findCtg(l, find_cate);
+				break;
+				
 			case "help":
 				Menu.displaymenu();
 				break;
